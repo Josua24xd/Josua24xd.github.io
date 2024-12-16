@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helados Personalizados - Portafolio</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+        }
+        nav { 
+            background-color: #0004ff; 
+            padding: 1em; 
+            text-align: center; 
+        }
+        nav a { 
+            margin: 0 15px; 
+            text-decoration: none; 
+            color: black; 
+            font-weight: bold; 
+        }
+        nav a:hover { 
+            color: #fff; 
+        }
+        .contenido-portafolio {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .filtros {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .filtro-btn {
+            background-color: #fff;
+            border: 2px solid #0004ff;
+            padding: 8px 16px;
+            margin: 0 5px;
+            cursor: pointer;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        .filtro-btn:hover {
+            background-color: #0004ff;
+            color: #333;
+        }
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .producto-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .producto-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .producto-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .producto-info {
+            padding: 15px;
+        }
+        .producto-info h3 {
+            margin: 0;
+            color: #333;
+        }
+        .detalles {
+            color: #666;
+            font-size: 0.9em;
+            margin: 5px 0;
+        }
+        .etiquetas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 10px;
+        }
+        .etiqueta {
+            background-color: #f0f0f0;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index2.html">Inicio</a>
+        <a href="acerca de.html">Acerca de</a>
+        <a href="servicio.html">Servicios</a>
+        <a href="portafolio.html">Portafolio</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="contenido-portafolio">
+        <h1>Nuestros Helados Personalizados</h1>
+        <p>Explora nuestra variedad de helados caseros con ingredientes y sabores personalizados.</p>
+        <div class="filtros">
+            <button class="filtro-btn">Todos</button>
+            <button class="filtro-btn">Frutas</button>
+            <button class="filtro-btn">Veganos</button>
+            <button class="filtro-btn">Sin Azúcar</button>
+            <button class="filtro-btn">Con Chocolate</button>
+        </div>
+        <div class="galeria">
+            <div class="producto-card">
+                <img src="C:\Users\bug\Pictures\freyman.jpeg" alt="Helado de Fresa y Mango" class="producto-img">
+                <div class="producto-info">
+                    <h3>Helado de Fresa y Mango</h3>
+                    <p class="detalles">Ingredientes frescos y sin conservantes</p>
+                    <div class="etiquetas">
+                        <span class="etiqueta">Frutas</span>
+                        <span class="etiqueta">Natural</span>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <img src="C:\Users\bug\Pictures\chocove.jpg" alt="Helado de Chocolate Vegano" class="producto-img">
+                <div class="producto-info">
+                    <h3>Helado de Chocolate Vegano</h3>
+                    <p class="detalles">Delicioso y apto para veganos</p>
+                    <div class="etiquetas">
+                        <span class="etiqueta">Vegano</span>
+                        <span class="etiqueta">Sin Lactosa</span>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <img src="C:\Users\bug\Pictures\choco.jpeg" alt="Helado de Coco y Almendras" class="producto-img">
+                <div class="producto-info">
+                    <h3>Helado de Coco y Almendras</h3>
+                    <p class="detalles">Sin azúcares añadidos, para un gusto ligero</p>
+                    <div class="etiquetas">
+                        <span class="etiqueta">Sin Azúcar</span>
+                        <span class="etiqueta">Saludable</span>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <img src="C:\Users\bug\Pictures\matcha.jpeg" alt="Helado de Matcha" class="producto-img">
+                <div class="producto-info">
+                    <h3>Helado de Matcha</h3>
+                    <p class="detalles">Con el toque especial del té verde</p>
+                    <div class="etiquetas">
+                        <span class="etiqueta">Saludable</span>
+                        <span class="etiqueta">Sin Azúcar</span>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <img src="C:\Users\bug\Pictures\vaiycaca.jpg" alt="Helado de Vainilla y Cacao" class="producto-img">
+                <div class="producto-info">
+                    <h3>Helado de Vainilla y Cacao</h3>
+                    <p class="detalles">Sabores clásicos reinventados</p>
+                    <div class="etiquetas">
+                        <span class="etiqueta">Con Chocolate</span>
+                        <span class="etiqueta">Natural</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
